@@ -19,5 +19,5 @@ export default function ProductsList() {
         <Link href={`/products/${productid}`}>Prod {productid}</Link>
       </h1>
     </>
-  );//replace will change hte previous button to the route before this route
+  );
 }
