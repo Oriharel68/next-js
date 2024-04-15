@@ -13,7 +13,7 @@ export default function ProductsList() {
         <Link href="/products/2">Prod 2</Link>
       </h1>
       <h1>
-        <Link href="/products/3"  replace>Prod 3</Link>/
+        <Link href="/products/3"  replace>Prod 3</Link>
       </h1>
       <h1>
         <Link href={`/products/${productid}`}>Prod {productid}</Link>
