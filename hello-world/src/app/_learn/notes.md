@@ -47,6 +47,10 @@ this object will contain further details about the error.
 
  if an error occured in a layout componenet and there is a error.tsx in the same folder it will not catch it because of the hierachy the fix for this will be placing the error.tsx higher in the hierachy
 
+### Default (default.tsx)
+
+when using unmatched routes meaning that in a slot you have a certain route that does something but in other slots you dont have this route you will need a default.tsx file to handle it cause it will look for this route when rendering the component when not finding its route if you got to this specific route via navigation in the ui you will not need this default.tsx file it will remembers what rendered before and will not throw an 404 error in the page.
+
 ### replace html element
 
 replace will change hte previous button to the route before this route
