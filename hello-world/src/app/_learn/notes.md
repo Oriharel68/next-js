@@ -14,6 +14,10 @@ will not be used as a route instead the folders in the route will replace it loc
 
 * @test - will act as a slot that get sent to the layout as props easier time to use it can also have its own error handling and loading states
 
+* (.)test -will create a intercpeptor fo a route that are in the same level for example: you have the f1 folder inside that you have the f2 folder and the (.)f2 folder when navigating to it from the f1 url thourgh the ui you will get the intercepted route for f2( (.)f2 --> page.tsx ) when reloading the page you will get the normal page.tsx ( f2--->page.tsx ), also there is the (..) that will intercept one level above the folder and (..)(..) two level above and also for the root app directory we have this (...).
+
+
+
 ### Templates (template.tsx)
 
 templates act like layout file but the diffrence is that a layout component will not remount when changing between pages with shared layouts templates will the order of the layout template and page is in the image template.
@@ -62,3 +66,7 @@ replace will change hte previous button to the route before this route
 here you get a slug variable as param includes all of the url routes that is preset [...slug] will achive this
 adding [] to [..slug] will include the root folder before the slug as its own page and will render it based on 
 page.tsx file in the slug folder
+
+### Conditional  routes
+
+to use Conditinal routes in aa slot enviroment you create a new slot (@login) make the login page and then in the layout page of the father you can do the logic there check if the user is logged in if he isnt you use jsx to display the login component if he is you continue to display the dashboard normally
