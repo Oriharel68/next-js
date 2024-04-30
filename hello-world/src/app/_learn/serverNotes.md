@@ -14,3 +14,10 @@ will be wrriten in this format:
 #   return new Response("GET handler");
     
 # }
+
+## POST:
+# export async function POST(request:Request,context:{params,query}) { // the request is the body of the request
+#   return new Response("GET handler");
+    
+# }
+context is an object that have the params object that contains the params for the request
