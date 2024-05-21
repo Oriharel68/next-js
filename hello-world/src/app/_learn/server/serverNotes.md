@@ -39,7 +39,7 @@ in order to use Headers sent by the client we need to use the headers function s
 
 To use cookies we can use the cookies method provided by next/headers we invoke the function and then we can use its get function to get the cookies and the set method to set a cookie for the request
 
-## middleware (middleware.ts)
+##         middleware (middleware.ts)
 
 To use the middlewares in our server we need to create a file in the [/src] folder and name it middleware.ts
 usually looks like this:

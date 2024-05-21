@@ -12,8 +12,11 @@ the folder. Good for products placement profiles etc.
 * (test) - will act as a shared space between the routes in this folder sharing template and layout file.
 will not be used as a route instead the folders in the route will replace it location.
 
+ # Slots
 * @test - will act as a slot that get sent to the layout as props easier time to use it can also have its own error handling and loading states
 
+
+    # Interceptors
 * (.)test -will create a intercpeptor fo a route that are in the same level for example: you have the f1 folder inside that you have the f2 folder and the (.)f2 folder when navigating to it from the f1 url thourgh the ui you will get the intercepted route for f2( (.)f2 --> page.tsx ) when reloading the page you will get the normal page.tsx ( f2--->page.tsx ), also there is the (..) that will intercept one level above the folder and (..)(..) two level above and also for the root app directory we have this (...).
 
 
