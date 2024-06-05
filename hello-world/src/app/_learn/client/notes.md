@@ -73,3 +73,14 @@ page.tsx file in the slug folder
 ### Conditional  routes
 
 to use Conditinal routes in aa slot enviroment you create a new slot (@login) make the login page and then in the layout page of the father you can do the logic there check if the user is logged in if he isnt you use jsx to display the login component if he is you continue to display the dashboard normally
+
+
+
+### Metadata
+
+To change the default metadata provided by default from next js we export an metadata object with the changes we desire for example:
+
+* export const metadata = {
+    title: "About Something"
+};
+* 
